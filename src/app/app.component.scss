@@ -1,0 +1,62 @@
+$spacing-standard: 16px;
+
+.app-frame {
+    box-sizing: border-box;
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .width-100 {
+        width: 100%;
+    }
+
+    .width-50 {
+        width: 50%;
+    }
+
+    .width-75 {
+        width: 75%;
+    }
+
+    .width-25 {
+        width: 25%;
+    }
+
+    .spacer {
+        flex: 1 1 auto;
+    }
+
+    .padding-all-standard {
+        padding: $spacing-standard;
+    }
+
+    .margin-all-standard {
+        margin: $spacing-standard;
+    }
+
+    .margin-horiz-standard {
+        margin: 0 $spacing-standard 0 $spacing-standard;
+    }
+
+    .margin-verti-standard {
+        margin: $spacing-standard 0 $spacing-standard 0;
+    }
+
+    .logo {
+        border: 1px solid #F00;
+    }
+
+    .right-menu {
+        align-content: center;
+        font-size: 24px;
+        color: #FFF;
+        text-shadow: 0 0 4px #333;
+        border: 1px solid #00F;
+
+        a {
+            color: #FFF;
+        }
+    }
+}
