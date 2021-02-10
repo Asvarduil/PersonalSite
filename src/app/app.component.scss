@@ -1,62 +1,82 @@
-$spacing-standard: 16px;
+@import '../style-constants';
 
 .app-frame {
-    box-sizing: border-box;
-
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .width-100 {
-        width: 100%;
-    }
-
-    .width-50 {
-        width: 50%;
-    }
-
-    .width-75 {
-        width: 75%;
-    }
-
-    .width-25 {
-        width: 25%;
-    }
-
-    .spacer {
-        flex: 1 1 auto;
-    }
-
-    .padding-all-standard {
-        padding: $spacing-standard;
-    }
-
-    .margin-all-standard {
-        margin: $spacing-standard;
-    }
-
-    .margin-horiz-standard {
-        margin: 0 $spacing-standard 0 $spacing-standard;
-    }
-
-    .margin-verti-standard {
-        margin: $spacing-standard 0 $spacing-standard 0;
-    }
-
     .logo {
-        border: 1px solid #F00;
+        width: 50%;
+        // border: 1px solid #F00;
+        color: $shadow-light;
     }
+
+        .logo:focus {
+            outline: none !important;
+        }
 
     .right-menu {
+        // border: 1px solid #00F;
+        padding: 18px;
         align-content: center;
-        font-size: 24px;
+        text-align: end;
+        font-size: $font-biggest;
         color: #FFF;
-        text-shadow: 0 0 4px #333;
-        border: 1px solid #00F;
 
         a {
             color: #FFF;
+            text-shadow: $shadow-light 0 0 16px;
+            text-decoration: none;
+        }
+    }
+
+    .content-zone {
+        flex: initial;
+    }
+
+    .copyright {
+        align-content: center;
+        justify-content: center;
+        font-size: $font-half;
+    }
+}
+
+// Tablet portrait
+@media only screen
+       and (max-device-width: 768px) 
+       and (orientation: portrait) {
+}
+
+// Tablet landscape
+@media only screen 
+       and (max-device-width: 1024px)
+       and (orientation: landscape) {
+}
+
+// Phone portrait
+@media only screen
+       and (max-device-width: 320px) 
+       and (orientation: portrait) {
+    .app-frame {
+        .logo {
+            width: 100%;
+        }
+
+        .right-menu {
+            font-size: $font-standard;
+            width: 100%;
+        }
+    }
+}
+
+// Phone landscape
+@media only screen
+       and (max-device-width: 568px)
+       and (orientation: landscape) {
+    .app-frame {
+        .logo {
+            width: 100%;
+        }
+
+        .right-menu {
+            font-size: $font-standard;
+            width: 100%;
         }
     }
 }

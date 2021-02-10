@@ -1,6 +1,6 @@
-<div class="app-frame padding-standard">
-  <div class="row width-100">
-    <app-logo class="logo width-25"
+<div class="app-frame">
+  <div class="row padding-standard margin-verti-standard">
+    <app-logo class="logo"
               routerLink="/home"></app-logo>
     <div class="spacer"></div>
     <div class="right-menu">
@@ -8,5 +8,11 @@
     </div>
   </div>
 
-  <router-outlet></router-outlet>
+  <div class="row padding-standard margin-verti-standard">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div class="row copyright margin-verti-standard">
+    ©2021, Andrew R. Gray.  All Rights Reserved
+  </div>
 </div>

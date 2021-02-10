@@ -1,1 +1,127 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'style-constants';
+
+html {
+    background: #336 no-repeat center center fixed;
+    box-sizing: border-box;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    height: auto;
+    min-width: 100%;
+    width: 100%;
+    padding: $spacing-standard;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: $font-standard;
+    color: white;
+    text-shadow: $shadow-mid 0 0 4px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-75 {
+    width: 75%;
+}
+
+.width-25 {
+    width: 25%;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.padding-standard, .padding-all-standard {
+    padding: $spacing-standard;
+}
+
+.margin-standard, .margin-all-standard {
+    margin: $spacing-standard;
+}
+
+.margin-horiz-standard {
+    margin: 0 $spacing-standard 0 $spacing-standard;
+}
+
+.margin-verti-standard {
+    margin: $spacing-standard 0 $spacing-standard 0;
+}
+
+// Tablet portrait
+@media only screen
+       and (max-device-width: 768px) 
+       and (orientation: portrait) {
+    html {
+        overflow-x: hidden;
+        overflow-y: initial;
+    }
+}
+
+// Tablet landscape
+@media only screen 
+       and (max-device-width: 1024px)
+       and (orientation: landscape) {
+    html {
+        overflow-x: hidden;
+        overflow-y: initial;
+    }
+}
+
+// Phone portrait
+@media only screen 
+       and (max-device-width: 320px) 
+       and (orientation: portrait) {
+    html {
+        min-height: auto;
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: initial;
+        padding: $spacing-half;
+        font-size: $font-half;
+    }
+
+    .padding-standard, .padding-all-standard {
+        padding: $spacing-half;
+    }
+
+    .margin-verti-standard {
+        margin: 0 $spacing-half 0 $spacing-half;
+    }
+}
+
+// Phone landscape
+@media only screen
+       and (max-device-width: 568px)
+       and (orientation: landscape) {
+    html {
+        min-height: auto;
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: initial;
+        padding: $spacing-half;
+        font-size: $font-half;
+    }
+    
+    .padding-standard, .padding-all-standard {
+        padding: $spacing-half;
+    }
+
+    .margin-verti-standard {
+        margin: 0 $spacing-half 0 $spacing-half;
+    }
+}
