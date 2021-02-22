@@ -6,18 +6,89 @@
 
     .headline {
         font-size: $font-big;
+        margin-block-start: $spacing-half;
+        margin-block-end: $spacing-half;
     }
 
     h2 {
         font-weight: lighter;
+        font-size: $font-big;
         margin-block-start: $spacing-half;
         margin-block-end: $spacing-half;
     }
 
     .job-entry {
+        animation: on-default-job-entry 0.5s forwards;
+        transition: all 0.5s ease; 
+
         background-color: rgba(0, 0, 0, 50%);
         padding: $spacing-half;
         border-radius: $spacing-half;
         margin-bottom: $spacing-half;
+
+        overflow-y: hidden;
+    }
+
+        .job-entry:hover, .job-entry:active {
+            animation: on-hover-job-entry 0.5s forwards;
+            transition: all 0.5s ease; 
+
+            overflow-y: show;
+        }
+}
+
+// Tablet portrait
+@media only screen 
+       and (max-device-width: 768px) 
+       and (orientation: portrait) {
+}
+
+// Tablet landscape
+@media only screen 
+       and (max-device-width: 1024px)
+       and (orientation: landscape) {
+}
+
+// Phone portrait
+@media only screen 
+       and (max-device-width: 320px) 
+       and (orientation: portrait) {
+    .cv-container {
+        .headline {
+            font-size: $font-standard;
+        }
+
+        h2 {
+            font-size: $font-standard;
+        }
+    }
+}
+
+// Phone landscape
+@media only screen
+       and (max-device-width: 568px)
+       and (orientation: landscape) {
+    .cv-container {
+        .headline {
+            font-size: $font-standard;
+        }
+
+        h2 {
+            font-size: $font-standard;
+        }
+    }
+}
+
+@keyframes on-default-job-entry {
+    100% {
+        height: auto;
+        max-height: 64px;
+    }
+}
+
+@keyframes on-hover-job-entry {
+    100% {
+        height: unset;
+        max-height: unset;
     }
 }
