@@ -1,0 +1,44 @@
+{
+    "entries": [
+        {
+            "placeOfWork": "Texas Legislative Council",
+            "position": "Programmer III",
+            "startDate": "2013-01-03",
+            "endDate": null,
+            "duties": "Rewrote VB6 and legacy C# applications used by various groups in the capitol to use more modern .NET framework and web technologies. Created modern web applications using the Angular toolset.  Collaborated with teammates in a Kanban-based Agile structure.",
+            "technologyUsed": "C#8, TypeScript, ASP .NET Core, Angular 9, CSS/LESS, MSSQL"
+        },
+        {
+            "placeOfWork": "Self",
+            "position": "Game Developer",
+            "startDate": "2013-04-01",
+            "endDate": "2014-01-01",
+            "duties": "Developed the game, \"The Hero's Journey\". Was responsible for designing content, systems, GUI, implementation, music, art, coordination of voluntary quality control, and marketing this small project. Game has been released on various game portals, and had nearly 3,000 plays within the first month of its release.  Note - Due to the deprecation of Netscape Plugin API (NPAPI) browser compatibility in 2015, \"The Hero's Journey\" is now unplayable except on Internet Explorer 11.",
+            "technologyUsed": "C#, Unity Game Engine, GNU Image Manipulation Program, Anvil Studio, SynthFont, HTML5 (Webplayer Container), jQuery (Webplayer Container)"
+        },
+        {
+            "placeOfWork": "McLane Advanced Technologies",
+            "position": "Software Developer",
+            "startDate": "2012-09-01",
+            "endDate": "2012-12-28",
+            "duties": "Responsible for maintaining and improving code based on customer tickets.",
+            "technologyUsed": ".NET 4.0, C#, PL/SQL, Crystal Reports 9.0"
+        },
+        {
+            "placeOfWork": "McLane Advanced Technologies",
+            "position": "Web Developer",
+            "startDate": "2012-08-01",
+            "endDate": "2012-09-01",
+            "duties": "Wrote C# code for an internal project derived from MAT's flagship product, SAMS-E. Maintained JavaScript scripts and CSHTML pages based upon internal reviews. Collaborated in a Scrum-based team to achieve the goals of two development sprints.",
+            "technologyUsed": "ASP.NET, MVC 3.0, .NET 4.0, C#, CSHTML, CSS, JavaScript, JQuery"
+        },
+        {
+            "placeOfWork": "Texas Legislative Council",
+            "position": "Technical Testing Engineer",
+            "startDate": "2011-04-01",
+            "endDate": "2012-07-31",
+            "duties": "Created test scripts in C# using the Ranorex Studio automated testing suite. Also created automated tools for our CM department using Ranorex to improve their productivity. Executed and documented load/performance tests against SAMS-E (Standard Army Maintenance System Enhanced). Created internal \"MMDF Validator\" tool to assist coworkers in validating the quarterly datafile from LOGSA.",
+            "technologyUsed": ".NET 3.5, C#, Ranorex Studio, PL/SQL, XML 1.0, HTML 4"
+        }
+    ]
+}

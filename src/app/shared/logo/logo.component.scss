@@ -3,19 +3,18 @@
 .text-only-logo {
     cursor: pointer;
     justify-content: center;
-    font-weight: lighter;
 
     h1.head {
         margin-block-start: 0;
         margin-block-end: 0;
         font-size: $font-biggest;
         
-        text-shadow: #999 0 0 16px;
+        text-shadow: #999 0 0 $shadow-range-big;
     }
 
     .subhead {
         font-size: $font-big;
-        text-shadow: #999 0 0 8px;
+        text-shadow: #999 0 0 $shadow-range-standard;
         font-style: italic;
     }
 }

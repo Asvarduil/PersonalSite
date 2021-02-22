@@ -1,7 +1,6 @@
 @import '../../style-constants';
 
 app-home { 
-    border: 1px solid #3F3;
     min-width: 100%;
     width: 100%;
     min-height: 100%;
@@ -10,10 +9,6 @@ app-home {
 }
 
 .home-container {
-    padding: 5% 16px 5% 16px;
-    color: white;
-    font-weight: lighter;
-
     .head {
         font-size: $font-big;
         text-shadow: $shadow-light 0 0 16px;

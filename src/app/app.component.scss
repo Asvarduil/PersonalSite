@@ -1,6 +1,18 @@
 @import '../style-constants';
 
 .app-frame {
+    display: flex;
+    flex-flow: column;
+
+    .header-row {
+        flex: 1;
+        height: 15%;
+    }
+
+    .content-row {
+        flex: 1;
+    }
+
     .logo {
         width: 50%;
         // border: 1px solid #F00;
@@ -12,8 +24,6 @@
         }
 
     .right-menu {
-        // border: 1px solid #00F;
-        padding: 18px;
         align-content: center;
         text-align: end;
         font-size: $font-biggest;
@@ -21,7 +31,7 @@
 
         a {
             color: #FFF;
-            text-shadow: $shadow-light 0 0 16px;
+            text-shadow: $shadow-light 0 0 $shadow-range-big;
             text-decoration: none;
         }
     }
@@ -31,6 +41,7 @@
     }
 
     .copyright {
+        margin-bottom: auto;
         align-content: center;
         justify-content: center;
         font-size: $font-half;

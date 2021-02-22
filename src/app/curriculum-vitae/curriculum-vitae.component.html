@@ -1,1 +1,15 @@
-<p>curriculum-vitae works!</p>
+<div class="cv-container">
+  <p class="headline">Andrew Gray has worked a number of computer programming jobs, as seen below.</p>
+  
+  <div *ngIf="!jobs || jobs.length === 0">
+    Loading...please wait...
+  </div>
+  
+  <div *ngIf="jobs && jobs.length > 0">
+    <div class="job-entry" *ngFor="let current of jobs">
+        <h2>{{current.placeOfWork}} / {{current.position}} (Started: {{current.startDate}})</h2>
+        <p><strong>Duties:</strong> {{current.duties}}</p>
+        <p><strong>Technologies Used:</strong> {{current.technologyUsed}}</p>
+    </div>
+  </div>
+</div>

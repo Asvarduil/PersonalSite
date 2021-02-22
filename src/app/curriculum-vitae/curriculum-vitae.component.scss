@@ -1,0 +1,23 @@
+@import '../../style-constants';
+
+.cv-container {
+    color: white;
+    font-weight: lighter;
+
+    .headline {
+        font-size: $font-big;
+    }
+
+    h2 {
+        font-weight: lighter;
+        margin-block-start: $spacing-half;
+        margin-block-end: $spacing-half;
+    }
+
+    .job-entry {
+        background-color: rgba(0, 0, 0, 50%);
+        padding: $spacing-half;
+        border-radius: $spacing-half;
+        margin-bottom: $spacing-half;
+    }
+}

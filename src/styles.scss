@@ -2,7 +2,6 @@
 
 html {
     background: #336 no-repeat center center fixed;
-    box-sizing: border-box;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -17,11 +16,17 @@ html {
 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: $font-standard;
+    font-weight: lighter;
     color: white;
     text-shadow: $shadow-mid 0 0 4px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .row {
+    min-height: 32px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -46,8 +51,20 @@ html {
     flex: 1 1 auto;
 }
 
+.spacer-verti {
+    flex: 1;
+}
+
 .padding-standard, .padding-all-standard {
     padding: $spacing-standard;
+}
+
+.padding-horiz-standard {
+    padding: 0 $spacing-standard 0 $spacing-standard;
+}
+
+.padding-verti-standard {
+    padding: $spacing-standard 0 $spacing-standard 0;
 }
 
 .margin-standard, .margin-all-standard {
@@ -99,6 +116,10 @@ html {
         padding: $spacing-half;
     }
 
+    .padding-verti-standard {
+        padding: 0 $spacing-half 0 $spacing-half;
+    }
+
     .margin-verti-standard {
         margin: 0 $spacing-half 0 $spacing-half;
     }
@@ -119,6 +140,10 @@ html {
     
     .padding-standard, .padding-all-standard {
         padding: $spacing-half;
+    }
+
+    .padding-verti-standard {
+        padding: 0 $spacing-half 0 $spacing-half;
     }
 
     .margin-verti-standard {
