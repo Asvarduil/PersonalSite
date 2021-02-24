@@ -132,7 +132,7 @@ html {
     html {
         min-height: auto;
         height: auto;
-        overflow-x: hidden;
+        overflow-x: initial;
         overflow-y: initial;
         padding: $spacing-half;
         font-size: $font-half;

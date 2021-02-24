@@ -8,7 +8,9 @@
   
   <div *ngIf="jobs && jobs.length > 0">
     <div class="job-entry" *ngFor="let current of jobs">
-        <h2>{{current.placeOfWork}} / {{current.position}} (Started: {{current.startDate}})</h2>
+        <h2>{{current.placeOfWork}}</h2>
+        <p><strong>{{current.position}}</strong></p>
+        <p>Started: {{current.startDate}}</p>
         <p><strong>Duties:</strong> {{current.duties}}</p>
         <p><strong>Technologies Used:</strong> {{current.technologyUsed}}</p>
     </div>
