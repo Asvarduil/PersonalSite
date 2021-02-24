@@ -2,15 +2,6 @@
 
 html {
     background: #336 no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 100%;
-    height: auto;
-    min-width: 100%;
-    width: 100%;
-    padding: $spacing-standard;
     overflow-x: hidden;
     overflow-y: hidden;
 
@@ -18,7 +9,23 @@ html {
     font-size: $font-standard;
     font-weight: lighter;
     color: white;
-    text-shadow: $shadow-mid 0 0 4px;
+    text-shadow: $shadow-mid-dark 0 0 $shadow-range-short;
+}
+
+body {
+    margin: 0;
+    padding: $spacing-standard;
+    
+    //animation: bg-slideshow 60s linear infinite;
+    background-image: url('./assets/ag-bg2.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+    height: auto;
+    min-width: 100vw;
+    width: 100vw;
 }
 
 * {
@@ -108,7 +115,6 @@ html {
         height: auto;
         overflow-x: hidden;
         overflow-y: initial;
-        padding: $spacing-half;
         font-size: $font-half;
     }
 
@@ -134,7 +140,6 @@ html {
         height: auto;
         overflow-x: initial;
         overflow-y: initial;
-        padding: $spacing-half;
         font-size: $font-half;
     }
     
@@ -148,5 +153,36 @@ html {
 
     .margin-verti-standard {
         margin: 0 $spacing-half 0 $spacing-half;
+    }
+}
+
+@keyframes bg-slideshow {
+    0% {
+        background-image: url('./assets/ag-bg1.jpg');
+        width: 100vw;
+        height: auto;
+    }
+    25% {
+        background-image: url('./assets/ag-bg2.jpg');
+        width: 100vw;
+        height: auto;
+    }
+
+    50% {
+        background-image: url('./assets/ag-bg3.jpg');
+        width: 100vw;
+        height: auto;
+    }
+
+    75% {
+        background-image: url('./assets/ag-bg4.jpg');
+        width: 100vw;
+        height: auto;
+    }
+
+    100% {
+        background-image: url('./assets/ag-bg1.jpg');
+        width: 100vw;
+        height: auto;
     }
 }

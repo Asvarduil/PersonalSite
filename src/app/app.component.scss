@@ -7,6 +7,11 @@
     .header-row {
         flex: 1;
         height: 15%;
+
+        background-color: rgba(0, 0, 0, 66%);
+        padding: $spacing-standard;
+        border-radius: $spacing-half;
+        justify-content: space-between;
     }
 
     .content-row {
@@ -14,9 +19,7 @@
     }
 
     .logo {
-        width: 50%;
-        // border: 1px solid #F00;
-        color: $shadow-light;
+        width: 100%;
     }
 
         .logo:focus {
@@ -24,7 +27,8 @@
         }
 
     .right-menu {
-        align-content: center;
+        width: 100%;
+        vertical-align: middle;
         text-align: end;
         font-size: $font-biggest;
         color: #FFF;
@@ -32,7 +36,7 @@
         a {
             margin-left: $spacing-big;
             color: #FFF;
-            text-shadow: $shadow-light 0 0 $shadow-range-big;
+            text-shadow: $shadow-mid-dark 0 0 $shadow-range-big;
             text-decoration: none;
         }
     }
@@ -53,12 +57,38 @@
 @media only screen
        and (max-device-width: 768px) 
        and (orientation: portrait) {
+    .header-row {
+        margin-bottom: $spacing-half;
+    }
+    
+    .logo {
+        width: 100%;
+    }
+
+    .right-menu {
+        font-size: $font-standard;
+        padding-top: $spacing-half;
+        width: 100%;
+    }
 }
 
 // Tablet landscape
 @media only screen 
        and (max-device-width: 1024px)
        and (orientation: landscape) {
+    .header-row {
+        margin-bottom: $spacing-half;
+    }
+    
+    .logo {
+        width: 100%;
+    }
+
+    .right-menu {
+        font-size: $font-standard;
+        padding-top: $spacing-half;
+        width: 100%;
+    }
 }
 
 // Phone portrait
@@ -66,12 +96,17 @@
        and (max-device-width: 320px) 
        and (orientation: portrait) {
     .app-frame {
+        .header-row {
+            margin-bottom: $spacing-half;
+        }
+
         .logo {
             width: 100%;
         }
 
         .right-menu {
             font-size: $font-standard;
+            padding-top: $spacing-half;
             width: 100%;
         }
     }
@@ -82,12 +117,17 @@
        and (max-device-width: 568px)
        and (orientation: landscape) {
     .app-frame {
+        .header-row {
+            margin-bottom: $spacing-half;
+        }
+
         .logo {
             width: 100%;
         }
 
         .right-menu {
             font-size: $font-standard;
+            padding-top: $spacing-half;
             width: 100%;
         }
     }

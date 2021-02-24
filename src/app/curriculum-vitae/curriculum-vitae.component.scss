@@ -1,6 +1,11 @@
 @import '../../style-constants';
 
 .cv-container {
+    background-color: rgba(0, 0, 0, 66%);
+    padding: $spacing-half;
+    border-radius: $spacing-half;
+    margin-bottom: $spacing-half;
+
     color: white;
     font-weight: lighter;
 
@@ -30,12 +35,13 @@
         animation: on-default-job-entry 0.5s forwards;
         transition: all 0.5s ease; 
 
-        background-color: rgba(0, 0, 0, 50%);
+        background-color: rgba(15%, 15%, 25%, 95%);
         padding: $spacing-half;
         border-radius: $spacing-half;
         margin-bottom: $spacing-half;
 
         overflow-y: hidden;
+        text-shadow: $shadow-light 0 0 $shadow-range-short;
     }
 
         .job-entry:hover, .job-entry:active {

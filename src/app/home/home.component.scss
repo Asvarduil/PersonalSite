@@ -9,13 +9,17 @@ app-home {
 }
 
 .home-container {
+    background: rgba(0, 0, 0, 66%);
+    padding: $spacing-standard;
+    border-radius: $spacing-half;
+
     .head {
         font-size: $font-big;
-        text-shadow: $shadow-light 0 0 16px;
+        text-shadow: $shadow-mid-dark 0 0 $shadow-range-big;
     }
 
     .subhead {
-        text-shadow: $shadow-mid 0 0 4px;
+        text-shadow: $shadow-mid-dark 0 0 $shadow-range-short;
     }
 }
 

@@ -9,12 +9,12 @@
         margin-block-end: 0;
         font-size: $font-biggest;
         
-        text-shadow: #999 0 0 $shadow-range-big;
+        text-shadow: $shadow-light 0 0 $shadow-range-big;
     }
 
     .subhead {
         font-size: $font-big;
-        text-shadow: #999 0 0 $shadow-range-standard;
+        text-shadow: $shadow-light 0 0 $shadow-range-standard;
         font-style: italic;
     }
 }
