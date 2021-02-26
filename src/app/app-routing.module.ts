@@ -6,8 +6,9 @@ import { CurriculumVitaeComponent} from '@app/curriculum-vitae/curriculum-vitae.
 
 const routes: Routes = [
   {
-    path: '*',
-    redirectTo: 'home'
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
   },
   {
     path: 'home',
@@ -16,6 +17,11 @@ const routes: Routes = [
   {
     path: 'cv',
     component: CurriculumVitaeComponent
+  },
+  {
+    path: '**',
+    pathMatch: 'full',
+    redirectTo: 'home'
   }
 ];
 

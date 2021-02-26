@@ -3,7 +3,6 @@
 html {
     background: #336 no-repeat center center fixed;
     overflow-x: hidden;
-    overflow-y: hidden;
 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: $font-standard;
@@ -15,9 +14,8 @@ html {
 body {
     margin: 0;
     padding: $spacing-standard;
-    
-    //animation: bg-slideshow 60s linear infinite;
-    background-image: url('./assets/ag-bg2.jpg');
+
+    background-image: url('./assets/ag-bg2adjmd.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -94,6 +92,10 @@ body {
         overflow-x: hidden;
         overflow-y: initial;
     }
+
+    body {
+        background-image: url('./assets/ag-bg2adjsm.png');
+    }
 }
 
 // Tablet landscape
@@ -103,6 +105,10 @@ body {
     html {
         overflow-x: hidden;
         overflow-y: initial;
+    }
+
+    body {
+        background-image: url('./assets/ag-bg2adjsm.png');
     }
 }
 
@@ -116,6 +122,10 @@ body {
         overflow-x: hidden;
         overflow-y: initial;
         font-size: $font-half;
+    }
+
+    body {
+        background-image: url('./assets/ag-bg2adjsm.png');
     }
 
     .padding-standard, .padding-all-standard {
@@ -141,6 +151,10 @@ body {
         overflow-x: initial;
         overflow-y: initial;
         font-size: $font-half;
+    }
+
+    body {
+        background-image: url('./assets/ag-bg2adjsm.png');
     }
     
     .padding-standard, .padding-all-standard {
