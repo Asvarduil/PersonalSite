@@ -13,6 +13,12 @@ app-home {
     padding: $spacing-standard;
     border-radius: $spacing-half;
 
+    a {
+        color: #9999FF;
+        text-decoration: none;
+        text-shadow: $shadow-light 0 0 $shadow-range-short;
+    }
+
     .head {
         font-size: $font-big;
         text-shadow: $shadow-mid-dark 0 0 $shadow-range-big;

@@ -1,0 +1,88 @@
+{
+    "entries": [
+        {
+            "name": "jQuery",
+            "type": "Web/Front end",
+            "lastVersionUsed": "1.3",
+            "classification": "Legacy",
+            "description": "Used jQuery in the SAMS-E 'On the Web', and in the first four Texas Legislative Council applications released."
+        },
+        {
+            "name": "Angular JS",
+            "type": "Web/Front end",
+            "lastVersionUsed": "1.3",
+            "classification": "Legacy",
+            "description": "Used AngularJS in the second 'block' of TLC applications released.  Ultimately abandoned due to Angular 2+ becoming available."
+        },
+        {
+            "name": "Angular",
+            "type": "Web/Front end",
+            "lastVersionUsed": "12",
+            "classification": "Current",
+            "description": "Angular's rise to fame became apparent about two years before COVID broke out.  The first Texas Legislative Council block 3 application, the House Administration Website, was rewritten from AngularJS to Angular 8, in the space of a year and a half.  All TLC Block 3 apps since then have used Angular for their front-end setup.  Additionally, this site is written in Angular 12!"
+        },
+        {
+            "name": "C#",
+            "type": "Language/Back end",
+            "lastVersionUsed": "8",
+            "classification": "Current",
+            "description": "C# is the primary language Andrew has used in his career.  His initial work with McLane Advanced Technologies happened in 2011, when C#6 was the current language version.  After moving to the Texas Legislative Council, C#7, and later C#8 became available, with improved functional language support, better generic types including the Tuple, and string interpolation, which helps with inline text formatting."
+        },
+        {
+            "name": ".NET Framework",
+            "type": "General-purpose/Back end",
+            "lastVersionUsed": "4.8",
+            "classification": "Current",
+            "description": "C# relies strongly on the .NET Framework to do more advanced things in a variety of contexts - web, Windows apps, and even hardware interop.  .NET 4 introduced a new way to handle in-memory collections, LINQ, built off of C#6's new Action and Func functional types.  Andrew's work on Web applications leaned heavily on the ASP.NET MVC stack for the SAMS-E 'On the Web' and the first block of Texas Legislative Council web applications."
+        },
+        {
+            "name": "ActiveReports",
+            "type": "Reports/Back end",
+            "lastVersionUsed": "14",
+            "classification": "Current",
+            "description": "ActiveReports is the reporting software of choice for the Texas Legislative Council, with all applications that Andrew worked on using this software to generate PDF reports, that are then served to the user through MVC actions in older apps, or Web API endpoints in more modern ones."
+        },
+        {
+            "name": "ASP.NET MVC",
+            "type": "Web/Full stack",
+            "lastVersionUsed": "4",
+            "classification": "Legacy",
+            "description": "Early Texas Legislative Council web applications were written to the ASP.NET MVC, as it was the most modular, convenient technology available at the time.  We used AJAX calls in jQuery to communicate with the server outside of Form posts.  This tech was ultimately abandoned in favor of the Web API-based approach provided by the Angular frameworks."
+        },
+        {
+            "name": "ASP.NET Web API",
+            "type": "Web/Full stack",
+            "lastVersionUsed": "5",
+            "classification": "Current",
+            "description": "With AngularJS and Angular, it became clear that RESTful Web APIs were the new, enduring way to write on-demand web interoperability.  Andrew's work has involved creating custom attributes to handle exception logging and user validation.  Additionally, Andrew routinely uses Swagger to document endpoints for internal use by other Texas Legislative Council teams."
+        },
+        {
+            "name": "Swagger",
+            "type": "Documentation/Full stack",
+            "lastVersionUsed": "5",
+            "classification": "Current",
+            "description": "Swagger is an invaluable tool for allowing other people to develop applications of a Web API that you author.  At a minimum, it exposes what endpoints are available, what arguments are used, and what schemas of data will be passed to and from the API."
+        },
+        {
+            "name": "Microsoft-variant SQL (MSSQL)",
+            "type": "Database/Back end",
+            "lastVersionUsed": "SQL Server 2019",
+            "classification": "Current",
+            "description": "All applications process data, which needs to be stored somewhere.  At the Texas Legislative Council, while Andrew didn't get retrained as a Database Administrator, he was able to work with setting up databases, tables, and views on a regular basis, as well as writing queries against that data in secure, performant ways."
+        },
+        {
+            "name": "TypeScript",
+            "type": "Language/Front end",
+            "lastVersionUsed": "4",
+            "classification": "Current",
+            "description": "Angular 2+ applications are compiled from TypeScript.  TypeScript provides improved organization, and better scoping, to JavaScript, while being backwards compatible with JavaScript.  In addition to Texas Legislative Council Angular applications, this personal website is written in TypeScript and Angular 12!"
+        },
+        {
+            "name": "ECMAScript (JavaScript)",
+            "type": "Language/Full stack",
+            "lastVersionUsed": "5",
+            "classification": "Legacy",
+            "description": "Andrew's initial work at McLane Advanced Technologies, and the first block of Texas Legislative Council apps, were written in JavaScript.  JavaScript is a powerful and ubiquitous OOP/Functional language, but it has a number of flaws due to its rushed initial development that make writing and maintaining apps in it problematic.  TypeScript solves many, but not all, of these issues, while frameworks like the Angular family provide structure that avoids programmers needing to run headlong into some of the more arcane aspects of the language."
+        }
+    ]
+}

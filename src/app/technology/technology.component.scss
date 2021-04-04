@@ -1,10 +1,17 @@
 @import '../../style-constants';
 
-.cv-container {
-    background-color: rgba(0, 0, 0, 66%);
-    padding: $spacing-half;
+app-technology { 
+    min-width: 100%;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+
+.technology-container {
+    background: rgba(0, 0, 0, 66%);
+    padding: $spacing-standard;
     border-radius: $spacing-half;
-    margin-bottom: $spacing-half;
+    padding-bottom: $spacing-standard;
 
     color: white;
     font-weight: lighter;
@@ -27,12 +34,8 @@
         margin-block-start: 0;
     }
 
-    strong {
-        font-weight: bold;
-    }
-
-    .job-entry {
-        animation: on-default-job-entry 0.5s forwards;
+    .technology-entry {
+        animation: on-default-tech-entry 0.5s forwards;
         transition: all 0.5s ease; 
 
         background-color: rgba(15%, 15%, 25%, 95%);
@@ -44,9 +47,9 @@
         text-shadow: $shadow-light 0 0 $shadow-range-short;
     }
 
-        .job-entry:active {
-            animation: on-click-job-entry 0.5s forwards;
-            transition: all 0.5s ease; 
+        .technology-entry:active {
+            animation: on-click-tech-entry 0.5s forwards;
+            transition: all 0.5s ease;
 
             overflow-y: show;
         }
@@ -105,14 +108,14 @@
     }
 }
 
-@keyframes on-default-job-entry {
+@keyframes on-default-tech-entry {
     100% {
         height: auto;
         max-height: 64px;
     }
 }
 
-@keyframes on-click-job-entry {
+@keyframes on-click-tech-entry {
     100% {
         height: unset;
         max-height: unset;

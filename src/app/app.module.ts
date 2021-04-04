@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from '@app/home/home.module';
 import { CurriculumVitaeModule } from '@app/curriculum-vitae/curriculum-vitae.module';
+import { TechnologyModule } from '@app/technology/technology.module';
 import { SharedModule } from '@app/shared/shared.module';
 
 @NgModule({
@@ -20,7 +21,8 @@ import { SharedModule } from '@app/shared/shared.module';
     AppRoutingModule,
     SharedModule,
     HomeModule,
-    CurriculumVitaeModule
+    CurriculumVitaeModule,
+    TechnologyModule
   ],
   providers: [
   ],

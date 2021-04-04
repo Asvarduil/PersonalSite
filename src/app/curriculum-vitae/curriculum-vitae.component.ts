@@ -10,7 +10,6 @@ import { HttpClient } from '@angular/common/http';
 export class CurriculumVitaeComponent implements OnInit {
   public isLoading: boolean = true;
   public jobs: JobEntry[] = [];
-  public jobsJson: string = '';
 
   constructor(
     public http: HttpClient
