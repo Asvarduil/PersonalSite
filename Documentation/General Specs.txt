@@ -1,0 +1,30 @@
+andrewrgray.info General Specs
+------------------------------
+
+The objective of this site is to act as a front-line reference to my C.V.
+and to act as a practical demonstration of my coding capabilities.
+
+------------------------------
+
+Home page:
+- This is the main landing page which allows people to navigate to an area
+  of their choice.
+
+  - Can navigate to Work history
+  - Can navigate to Personal projects
+  - Has a prominent, current photo of me
+
+Work history page:
+- This has a listing of my work history in an easy-to-navigate format.
+
+  - Name of the company
+  - Date range of employment
+  - Position in the company
+  - Technologies used
+  - Duties
+
+Personal projects page:
+- This has a list of my personal projects that aren't tied to the site or a
+  specific job.
+
+  - ???
