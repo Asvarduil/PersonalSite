@@ -1,0 +1,76 @@
+@import '../../style-constants';
+
+app-home { 
+    min-width: 100%;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.home-container {
+    background: rgba(0, 0, 0, 66%);
+    padding: $spacing-standard;
+    border-radius: $spacing-half;
+
+    a {
+        color: #9999FF;
+        text-decoration: none;
+        text-shadow: $shadow-light 0 0 $shadow-range-short;
+    }
+
+    .head {
+        font-size: $font-big;
+        text-shadow: $shadow-mid-dark 0 0 $shadow-range-big;
+    }
+
+    .subhead {
+        text-shadow: $shadow-mid-dark 0 0 $shadow-range-short;
+    }
+}
+
+// Tablet portrait
+@media only screen 
+       and (max-device-width: 768px) 
+       and (orientation: portrait) {
+}
+
+// Tablet landscape
+@media only screen 
+       and (max-device-width: 1024px)
+       and (orientation: landscape) {
+}
+
+// Phone portrait
+@media only screen 
+       and (max-device-width: 320px) 
+       and (orientation: portrait) {
+    .home-container {
+        padding: $spacing-half;
+    
+        .head {
+            font-size: $font-standard;
+        }
+
+        .subhead {
+            font-size: $font-half;
+        }
+    }
+}
+
+// Phone landscape
+@media only screen
+       and (max-device-width: 568px)
+       and (orientation: landscape) {
+    .home-container {
+        padding: $spacing-half;
+    
+        .head {
+            font-size: $font-standard;
+        }
+
+        .subhead {
+            font-size: $font-half;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import '../../../style-constants';
+
+.text-only-logo {
+    cursor: pointer;
+    justify-content: center;
+
+    h1.head {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        font-size: $font-biggest;
+        
+        text-shadow: $shadow-light 0 0 $shadow-range-big;
+    }
+
+    .subhead {
+        font-size: $font-big;
+        text-shadow: $shadow-light 0 0 $shadow-range-standard;
+        font-style: italic;
+    }
+}
+
+// Tablet portrait
+@media only screen 
+       and (max-device-width: 768px) 
+       and (orientation: portrait) {
+}
+
+// Tablet landscape
+@media only screen 
+       and (max-device-width: 1024px)
+       and (orientation: landscape) {
+}
+
+// Phone portrait
+@media only screen 
+       and (max-device-width: 320px) 
+       and (orientation: portrait) {
+    .text-only-logo {
+        h1.head {
+            font-size: $font-standard;
+        }
+
+        .subhead {
+            font-size: $font-half;
+        }
+    }
+}
+
+// Phone landscape
+@media only screen
+       and (max-device-width: 568px)
+       and (orientation: landscape) {
+    .text-only-logo {
+        h1.head {
+            font-size: $font-standard;
+        }
+
+        .subhead {
+            font-size: $font-half;
+        }
+    }
+}

@@ -1,0 +1,120 @@
+@import '../../style-constants';
+
+.cv-container {
+    background-color: rgba(0, 0, 0, 66%);
+    padding: $spacing-half;
+    border-radius: $spacing-half;
+    margin-bottom: $spacing-half;
+
+    color: white;
+    font-weight: lighter;
+
+    .headline {
+        font-size: $font-big;
+        margin-block-start: $spacing-half;
+        margin-block-end: $spacing-half;
+    }
+
+    h2 {
+        display: inline-block;
+        font-weight: normal;
+        font-size: $font-medium;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+
+    p {
+        margin-block-start: 0;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    .job-entry {
+        animation: on-default-job-entry 0.5s forwards;
+        transition: all 0.5s ease; 
+
+        background-color: rgba(15%, 15%, 25%, 95%);
+        padding: $spacing-half;
+        border-radius: $spacing-half;
+        margin-bottom: $spacing-half;
+
+        overflow-y: hidden;
+        text-shadow: $shadow-light 0 0 $shadow-range-short;
+    }
+
+        .job-entry:active {
+            animation: on-click-job-entry 0.5s forwards;
+            transition: all 0.5s ease; 
+
+            overflow-y: show;
+        }
+}
+
+// Tablet portrait
+@media only screen 
+       and (max-device-width: 768px) 
+       and (orientation: portrait) {
+}
+
+// Tablet landscape
+@media only screen 
+       and (max-device-width: 1024px)
+       and (orientation: landscape) {
+}
+
+// Phone portrait
+@media only screen 
+       and (max-device-width: 320px) 
+       and (orientation: portrait) {
+    .cv-container {
+        .headline {
+            font-size: $font-standard;
+        }
+
+        h2 {
+            font-size: $font-medium;
+            margin-block-end: 0;
+        }
+
+        p {
+            margin-block-start: 0;
+        }
+    }
+}
+
+// Phone landscape
+@media only screen
+       and (max-device-width: 568px)
+       and (orientation: landscape) {
+    .cv-container {
+        .headline {
+            font-size: $font-standard;
+        }
+
+        h2 {
+            font-size: $font-big;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        p {
+            margin-block-start: 0;
+        }
+    }
+}
+
+@keyframes on-default-job-entry {
+    100% {
+        height: auto;
+        max-height: 64px;
+    }
+}
+
+@keyframes on-click-job-entry {
+    100% {
+        height: unset;
+        max-height: unset;
+    }
+}

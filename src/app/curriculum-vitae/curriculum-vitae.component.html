@@ -1,0 +1,18 @@
+<div class="cv-container">
+  <p class="headline">Andrew Gray has worked a number of computer programming jobs, as seen below.</p>
+  <p>Click a history posting to learn more.</p>
+  
+  <div *ngIf="!jobs || jobs.length === 0">
+    Loading...please wait...
+  </div>
+  
+  <div *ngIf="jobs && jobs.length > 0">
+    <div class="job-entry" *ngFor="let current of jobs">
+        <h2>{{current.placeOfWork}}</h2>
+        <p><strong>{{current.position}}</strong></p>
+        <p>Started: {{current.startDate}}</p>
+        <p><strong>Duties:</strong> {{current.duties}}</p>
+        <p><strong>Technologies Used:</strong> {{current.technologyUsed}}</p>
+    </div>
+  </div>
+</div>
