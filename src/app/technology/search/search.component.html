@@ -1,0 +1,27 @@
+<div class="search-interface row">
+    <form ngForm="searchForm">
+        <input type="text"
+            maxlength=50
+            [formControl]="nameField" />
+
+        <select [formControl]="typeDropdown">
+            <option *ngFor="let current of types"
+                    value="{{current}}">
+                {{current}}
+            </option>
+        </select>
+        
+        <select [formControl]="classificationDropdown">
+            <option *ngFor="let current of classifications"
+                    value="{{current}}">
+                {{current}}
+            </option>
+        </select>
+        
+        <button class="search-button"
+                type="button"
+                (click)="search()">
+            Search
+        </button>
+    </form>
+</div>
