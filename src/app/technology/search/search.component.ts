@@ -36,8 +36,16 @@ export class SearchComponent implements OnInit {
     this.onSearch.emit(results);
   }
 
+  clear() {
+    this.nameField.setValue(null);
+    this.typeDropdown.setValue(null);
+    this.classificationDropdown.setValue(null);
+    
+    let results = JSON.parse(JSON.stringify(this.technologies));
+    this.onSearch.emit(results);
+  }
+
   private filterCriteria(): Technology[] {
-    console.info('Search initiated...');
     let results: Technology[] = [];
 
     // Extract terms from search form controls...
@@ -48,16 +56,9 @@ export class SearchComponent implements OnInit {
     for (let current of this.technologies) {
       let invariantName = current.name.toLowerCase();
       let nameMatch = !invariantNameTerm || invariantName.includes(invariantNameTerm);
-      if (nameMatch && invariantNameTerm)
-        console.info('Name fragment' + invariantNameTerm + ' exists in ' + invariantName);
       
-      let typeMatch = !typeTerm || current.type;
-      if (typeMatch && typeTerm)
-        console.info(current.name + ' is a ' + typeTerm + '-type technology');
-
+      let typeMatch = !typeTerm || typeTerm === current.type;
       let classificationMatch = !classificationTerm || classificationTerm === current.classification;
-      if (classificationMatch && classificationTerm)
-        console.info(current.name + ' is classed as ' + classificationTerm);
 
       if (nameMatch && typeMatch && classificationMatch)
         results.push(current);

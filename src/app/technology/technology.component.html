@@ -2,13 +2,17 @@
     <p class="headline">Andrew has worked with a wide variety of technologies.</p>
     <p>Click a technology posting to learn more.</p>
 
+    <app-search [technologies]="technologies" 
+                (onSearch)="applyResults($event)">
+    </app-search>
+
     <div *ngIf="!technologies || technologies.length === 0">
         Loading...please wait...
     </div>
 
-    <div *ngIf="technologies && technologies.length > 0">
+    <div *ngIf="results && results.length > 0">
         <div class="technology-entry  {{ current.isExpanded ? 'entry-visible' : '' }}" 
-             *ngFor="let current of technologies"
+             *ngFor="let current of results"
              (click)="toggleEntry(current)">
             <h2>{{current.name}} - {{current.type}} ({{current.classification}})</h2>
             <p><em>Last version used: {{current.lastVersionUsed}}</em></p>

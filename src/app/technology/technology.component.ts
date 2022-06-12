@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { TimeoutError } from 'rxjs';
 
 @Component({
   selector: 'app-technology',
@@ -10,6 +11,7 @@ import { HttpClient } from '@angular/common/http';
 export class TechnologyComponent implements OnInit {
   isLoading: boolean = true;
   technologies: Technology[] = [];
+  results: Technology[] = [];
 
   constructor(public http: HttpClient) { 
   }
@@ -21,6 +23,7 @@ export class TechnologyComponent implements OnInit {
     .subscribe((result: any) => {
       this.isLoading = false;
       this.technologies = result["entries"];
+      this.results = JSON.parse(JSON.stringify(this.technologies));
       console.info('Technologies loaded.');
     }, (error: any) => {
       let errorDump = JSON.stringify(error);
@@ -28,11 +31,32 @@ export class TechnologyComponent implements OnInit {
     });
   }
 
+  applyResults(searchResults: Technology[]) {
+    console.info('Received ' + searchResults.length + ' results', searchResults);
+    this.results = searchResults;
+  }
   
   toggleEntry(entry: Technology) {
     entry.isExpanded = !entry.isExpanded;
   }
 }
+
+export var TechnologyTypes = [
+  "Language/Front end",
+  "Language/Back end",
+  "Language/Full stack",
+  "Web/Front end",
+  "Web/Full stack",
+  "Database/Back end",
+  "General-purpose/Back end",
+  "Reports/Back end",
+  "Documentation/Full stack"
+];
+
+export var TechnologyClassifications = [
+  "Current",
+  "Legacy"
+];
 
 export class Technology {
   public name: string = '';
