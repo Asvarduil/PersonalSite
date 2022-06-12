@@ -28,6 +28,10 @@ export class TechnologyComponent implements OnInit {
     });
   }
 
+  
+  toggleEntry(entry: Technology) {
+    entry.isExpanded = !entry.isExpanded;
+  }
 }
 
 export class Technology {
@@ -36,4 +40,5 @@ export class Technology {
   public lastVersionUsed: string = '';
   public classification: string = '';
   public description: string = '';
+  public isExpanded: boolean = false;
 }

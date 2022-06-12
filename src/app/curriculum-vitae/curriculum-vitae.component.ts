@@ -28,6 +28,10 @@ export class CurriculumVitaeComponent implements OnInit {
         console.error(errorDump);
       });
   }
+
+  toggleEntry(entry: JobEntry) {
+    entry.isExpanded = !entry.isExpanded;
+  }
 }
 
 export class JobEntry {
@@ -37,4 +41,5 @@ export class JobEntry {
   endDate: string = '';
   duties: string = '';
   technologyUsed: string = '';
+  isExpanded: boolean = false;
 }

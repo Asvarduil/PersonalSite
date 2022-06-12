@@ -7,7 +7,9 @@
   </div>
   
   <div *ngIf="jobs && jobs.length > 0">
-    <div class="job-entry" *ngFor="let current of jobs">
+    <div class="job-entry {{ current.isExpanded ? 'entry-visible' : '' }}" 
+         *ngFor="let current of jobs"
+         (click)="toggleEntry(current)">
         <h2>{{current.placeOfWork}}</h2>
         <p><strong>{{current.position}}</strong></p>
         <p>Started: {{current.startDate}}</p>

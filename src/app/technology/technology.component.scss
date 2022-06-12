@@ -47,7 +47,7 @@ app-technology {
         text-shadow: $shadow-light 0 0 $shadow-range-short;
     }
 
-        .technology-entry:active {
+        .technology-entry.entry-visible {
             animation: on-click-tech-entry 0.5s forwards;
             transition: all 0.5s ease;
 

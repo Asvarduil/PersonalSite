@@ -7,7 +7,9 @@
     </div>
 
     <div *ngIf="technologies && technologies.length > 0">
-        <div class="technology-entry" *ngFor="let current of technologies">
+        <div class="technology-entry  {{ current.isExpanded ? 'entry-visible' : '' }}" 
+             *ngFor="let current of technologies"
+             (click)="toggleEntry(current)">
             <h2>{{current.name}} - {{current.type}} ({{current.classification}})</h2>
             <p><em>Last version used: {{current.lastVersionUsed}}</em></p>
             <p>{{current.description}}</p>
