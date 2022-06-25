@@ -1,27 +1,11 @@
-# AndrewPersonalSite
+# Andrew R. Gray's Personal Site
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
+Thank you for taking the time to view this repository!
 
-## Development server
+This is the source code repository for me, Andrew R. Gray, a veteran software developer of 10 years.  This is an Angular site that demonstrates some of my coding capabilities.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2, but has since been upgraded to Angular 13.
 
-## Code scaffolding
+Due to the limited nature of this site, this code runs fully front-end; there's simply no need for backend API dependencies...yet.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+If you have questions or ideas, or are interested in hiring me, please contact me at andrew.russel.gray -at- gmail -dot- com.  My inbox is a busy place, though, and I'm a busy man, so it may take me some time to see your message.
