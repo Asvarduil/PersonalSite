@@ -1,23 +1,35 @@
 <div class="search-interface row">
     <form ngForm="searchForm">
-        <input type="text"
-            maxlength=50
-            [formControl]="nameField" />
+        <div class="form-group">
+            <div class="form-control-name">Tech name</div>
+            <input class="name-field"
+                   type="text"
+                   maxlength=50
+                   [formControl]="nameField" />
+        </div>
 
-        <select [formControl]="typeDropdown">
-            <option *ngFor="let current of types"
-                    value="{{current}}">
-                {{current}}
-            </option>
-        </select>
+        <div class="form-group">
+            <div class="form-control-name">Type</div>
+            <select class="type-dropdown"
+                    [formControl]="typeDropdown">
+                <option *ngFor="let current of types"
+                        value="{{current}}">
+                    {{current}}
+                </option>
+            </select>
+        </div>
         
-        <select [formControl]="classificationDropdown">
-            <option *ngFor="let current of classifications"
-                    value="{{current}}">
-                {{current}}
-            </option>
-        </select>
-        
+        <div class="form-group">
+            <div class="form-control-name">Classification</div>
+            <select class="classification-dropdown"
+                    [formControl]="classificationDropdown">
+                <option *ngFor="let current of classifications"
+                        value="{{current}}">
+                    {{current}}
+                </option>
+            </select>
+        </div>
+
         <button class="search-button"
                 type="button"
                 (click)="search()">

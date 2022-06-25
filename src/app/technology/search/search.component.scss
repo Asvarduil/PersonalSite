@@ -1,16 +1,25 @@
 @import '../../../style-constants';
 
 .search-interface {
-    line-height: 48px;
     margin-bottom: $spacing-standard;
     border-bottom: 1px solid #999;
 
-    input, select {
-        min-height: 24px;
-        margin-right: $spacing-standard;
-        border: none;
-        border-bottom: 1px solid #FFF;
-        border-radius: 4px;
+    .form-group {
+        display: inline-block;
+        margin-bottom: $spacing-standard;
+
+        .form-control-name {
+            font-size: 0.75em;
+            margin-bottom: $spacing-half;
+        }
+
+        input, select {
+            min-height: 24px;
+            margin-right: $spacing-standard;
+            border: none;
+            border-bottom: 1px solid #FFF;
+            border-radius: 4px;
+        }
     }
 
     button {
@@ -20,8 +29,13 @@
         border-radius: 4px;
         padding: 4px;
         margin-right: $spacing-standard;
+        margin-bottom: $spacing-standard;
 
         color: #FFF;
+    }
+
+    .classification-dropdown {
+        min-width: 100px;
     }
 
     .search-button {
