@@ -1,0 +1,21 @@
+Pending enhancements:
+
+- Refine technologies search interface to do the following:
+    - Filter tech on tech name keyup
+    - Filter tech on changing tech type
+    - Filter tech on changing tech Classification
+
+- Open GitHub source code in new tab
+
+- Create projects tab
+    + WHEN a new personal project is created, start the projects tab.
+    + Add https://flags.house.texas.gov to the projects tab.
+    + Similar rules as CV & Technologies?
+
+- Implement Docker/Container technologies as part of build process
+    - Make containerization work with Firebase.
+
+- Hide JSON data behind Firebase remote functions for greater security
+
+- Update Angular to 14
+    + WHEN Angular 14 comes out
