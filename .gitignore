@@ -41,8 +41,8 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+/.angular
 
 # System Files
 .DS_Store
 Thumbs.db
->>>>>>> 0d3e439448aac9b94333fa38acb8103efb8cea16
