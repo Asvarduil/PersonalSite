@@ -4,6 +4,8 @@ Pending enhancements:
     - Filter tech on tech name keyup
     - Filter tech on changing tech type
     - Filter tech on changing tech Classification
+    - Make the search interface look good on phone & tablet
+    - Make technology items also look good on phone & tablet
 
 - Open GitHub source code in new tab
 
