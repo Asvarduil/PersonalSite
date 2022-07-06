@@ -48,13 +48,14 @@ button.primary-action {
        and (orientation: portrait) {
     .form-group {
         input, select {
-            padding: none;
+            padding: $spacing-standard;
             min-height: 24px;
         }
     }
 
     .button-group {
         button {
+            padding: $spacing-standard;
             min-height: 24px;
         }
     }
@@ -81,7 +82,7 @@ button.primary-action {
 
 // Phone portrait
 @media only screen 
-       and (max-device-width: 460px) 
+       and (max-device-width: 500px) 
        and (orientation: portrait) {
     .form-group {
         display: block !important;
@@ -115,7 +116,7 @@ button.primary-action {
 
 // Phone landscape
 @media only screen
-       and (max-device-width: 750px)
+       and (max-device-width: 700px)
        and (orientation: landscape) {
     .form-group {
         display: block !important;

@@ -30,11 +30,11 @@
         width: 100%;
         vertical-align: middle;
         text-align: end;
-        font-size: $font-biggest;
         color: #FFF;
 
-        a {
+        .menu-item {
             margin-left: $spacing-big;
+            font-size: $font-biggest;
             color: #FFF;
             text-shadow: $shadow-mid-dark 0 0 $shadow-range-big;
             text-decoration: none;
@@ -66,9 +66,12 @@
     }
 
     .right-menu {
-        font-size: $font-standard;
         padding-top: $spacing-half;
-        width: 100%;
+
+        .menu-item {
+            margin-left: $spacing-big;
+            font-size: $font-standard;
+        }
     }
 }
 
@@ -85,15 +88,18 @@
     }
 
     .right-menu {
-        font-size: $font-standard;
         padding-top: $spacing-half;
-        width: 100%;
+
+        .menu-item {
+            margin-left: $spacing-big;
+            font-size: $font-standard;
+        }
     }
 }
 
 // Phone portrait
 @media only screen
-       and (max-device-width: 320px) 
+       and (max-device-width: 500px) 
        and (orientation: portrait) {
     .app-frame {
         .header-row {
@@ -105,16 +111,19 @@
         }
 
         .right-menu {
-            font-size: $font-standard;
             padding-top: $spacing-half;
-            width: 100%;
+
+            .menu-item {
+                margin-left: $spacing-big;
+                font-size: $font-standard;
+            }
         }
     }
 }
 
 // Phone landscape
 @media only screen
-       and (max-device-width: 568px)
+       and (max-device-width: 700px)
        and (orientation: landscape) {
     .app-frame {
         .header-row {
@@ -126,9 +135,12 @@
         }
 
         .right-menu {
-            font-size: $font-standard;
             padding-top: $spacing-half;
-            width: 100%;
+
+            .menu-item {
+                margin-left: $spacing-big;
+                font-size: $font-standard;
+            }
         }
     }
 }

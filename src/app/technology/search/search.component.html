@@ -13,7 +13,7 @@
             <div class="form-control-name">Type</div>
             <select class="type-dropdown"
                     [formControl]="typeDropdown"
-                    (onChange)="search()">
+                    (change)="search()">
                 <option *ngFor="let current of types"
                         value="{{current}}">
                     {{current}}
@@ -25,7 +25,7 @@
             <div class="form-control-name">Classification</div>
             <select class="classification-dropdown"
                     [formControl]="classificationDropdown"
-                    (onChange)="search()">
+                    (change)="search()">
                 <option *ngFor="let current of classifications"
                         value="{{current}}">
                     {{current}}

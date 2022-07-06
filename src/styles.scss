@@ -98,7 +98,7 @@ input, select {
     }
 
     body {
-        background-image: url('./assets/ag-bg2adjsm.png');
+        background-image: url('./assets/ag-bg5adjsm.png');
     }
 }
 
@@ -112,7 +112,7 @@ input, select {
     }
 
     body {
-        background-image: url('./assets/ag-bg2adjsm.png');
+        background-image: url('./assets/ag-bg5adjsm.png');
     }
 }
 
@@ -129,7 +129,7 @@ input, select {
     }
 
     body {
-        background-image: url('./assets/ag-bg2adjsm.png');
+        background-image: url('./assets/ag-bg5adjsm.png');
     }
 
     .padding-standard, .padding-all-standard {
@@ -147,7 +147,7 @@ input, select {
 
 // Phone landscape
 @media only screen
-       and (max-device-width: 568px)
+       and (max-device-width: 750px)
        and (orientation: landscape) {
     html {
         min-height: auto;
@@ -158,7 +158,7 @@ input, select {
     }
 
     body {
-        background-image: url('./assets/ag-bg2adjsm.png');
+        background-image: url('./assets/ag-bg5adjsm.png');
     }
     
     .padding-standard, .padding-all-standard {
