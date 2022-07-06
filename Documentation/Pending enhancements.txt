@@ -1,20 +1,29 @@
 Pending enhancements:
 
 - Refine technologies search interface to do the following:
+  Priority: ****
+    - Filter tech on tech name keyup
+    - Filter tech on changing tech type
+    - Filter tech on changing tech Classification
     - Make the search interface look good on phone & tablet
     - Make technology items also look good on phone & tablet
 
 - Open GitHub source code in new tab
+  Priority: *
 
 - Create projects tab
+  Priority: *
     + WHEN a new personal project is created, start the projects tab.
     + Add https://flags.house.texas.gov to the projects tab.
     + Similar rules as CV & Technologies?
 
 - Implement Docker/Container technologies as part of build process
+  Priority: **
     - Make containerization work with Firebase.
 
 - Hide JSON data behind Firebase remote functions for greater security
+  Priority: **
 
 - Update Angular to 15
+  Priority: *****
     + WHEN Angular 15 comes out
