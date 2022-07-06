@@ -118,7 +118,7 @@ input, select {
 
 // Phone portrait
 @media only screen 
-       and (max-device-width: 320px) 
+       and (max-device-width: 460px) 
        and (orientation: portrait) {
     html {
         min-height: auto;

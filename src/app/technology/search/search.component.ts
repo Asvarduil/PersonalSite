@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 import { Technology, TechnologyTypes, TechnologyClassifications } from '../technology.component';
@@ -6,7 +6,8 @@ import { Technology, TechnologyTypes, TechnologyClassifications } from '../techn
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
-  styleUrls: ['./search.component.scss']
+  styleUrls: ['./search.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class SearchComponent implements OnInit {
   @Input() technologies: Technology[] = [];
@@ -45,7 +46,7 @@ export class SearchComponent implements OnInit {
     for (let current of results) {
       current.isExpanded = false;
     }
-    
+
     this.onSearch.emit(results);
   }
 
