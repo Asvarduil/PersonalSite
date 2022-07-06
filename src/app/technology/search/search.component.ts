@@ -41,7 +41,11 @@ export class SearchComponent implements OnInit {
     this.typeDropdown.setValue(null);
     this.classificationDropdown.setValue(null);
     
-    let results = JSON.parse(JSON.stringify(this.technologies));
+    let results: Technology[] = JSON.parse(JSON.stringify(this.technologies));
+    for (let current of results) {
+      current.isExpanded = false;
+    }
+    
     this.onSearch.emit(results);
   }
 

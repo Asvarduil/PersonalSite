@@ -1,9 +1,6 @@
 Pending enhancements:
 
 - Refine technologies search interface to do the following:
-    - Filter tech on tech name keyup
-    - Filter tech on changing tech type
-    - Filter tech on changing tech Classification
     - Make the search interface look good on phone & tablet
     - Make technology items also look good on phone & tablet
 
@@ -19,5 +16,5 @@ Pending enhancements:
 
 - Hide JSON data behind Firebase remote functions for greater security
 
-- Update Angular to 14
-    + WHEN Angular 14 comes out
+- Update Angular to 15
+    + WHEN Angular 15 comes out

@@ -15,7 +15,7 @@ body {
     margin: 0;
     padding: $spacing-standard;
 
-    background-image: url('./assets/ag-bg2adjsm.png');
+    background-image: url('./assets/ag-bg5adjsm.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -171,36 +171,5 @@ input, select {
 
     .margin-verti-standard {
         margin: 0 $spacing-half 0 $spacing-half;
-    }
-}
-
-@keyframes bg-slideshow {
-    0% {
-        background-image: url('./assets/ag-bg1.jpg');
-        width: 100vw;
-        height: auto;
-    }
-    25% {
-        background-image: url('./assets/ag-bg2.jpg');
-        width: 100vw;
-        height: auto;
-    }
-
-    50% {
-        background-image: url('./assets/ag-bg3.jpg');
-        width: 100vw;
-        height: auto;
-    }
-
-    75% {
-        background-image: url('./assets/ag-bg4.jpg');
-        width: 100vw;
-        height: auto;
-    }
-
-    100% {
-        background-image: url('./assets/ag-bg1.jpg');
-        width: 100vw;
-        height: auto;
     }
 }

@@ -5,13 +5,15 @@
             <input class="name-field"
                    type="text"
                    maxlength=50
-                   [formControl]="nameField" />
+                   [formControl]="nameField"
+                   (keyup)="search()" />
         </div>
 
         <div class="form-group">
             <div class="form-control-name">Type</div>
             <select class="type-dropdown"
-                    [formControl]="typeDropdown">
+                    [formControl]="typeDropdown"
+                    (onChange)="search()">
                 <option *ngFor="let current of types"
                         value="{{current}}">
                     {{current}}
@@ -22,7 +24,8 @@
         <div class="form-group">
             <div class="form-control-name">Classification</div>
             <select class="classification-dropdown"
-                    [formControl]="classificationDropdown">
+                    [formControl]="classificationDropdown"
+                    (onChange)="search()">
                 <option *ngFor="let current of classifications"
                         value="{{current}}">
                     {{current}}
@@ -30,12 +33,7 @@
             </select>
         </div>
 
-        <button class="search-button"
-                type="button"
-                (click)="search()">
-            Search
-        </button>
-        <button class="clear-button"
+        <button class="primary-action clear-button"
                 type="button"
                 (click)="clear()">
             Clear
