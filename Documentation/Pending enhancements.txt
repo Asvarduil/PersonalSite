@@ -1,12 +1,13 @@
 Pending enhancements:
 
+- Get better background pictures
+  Priority: ***
+
 - Refine technologies search interface to do the following:
   Priority: ****
     - Make the search interface look good on phone & tablet
     - Make technology items also look good on phone & tablet
-
-- Open GitHub source code in new tab
-  Priority: *
+    ? Consider revising components to be more modal, instead of relying on CSS so much.
 
 - Create projects tab
   Priority: *
