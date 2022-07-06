@@ -1,5 +1,8 @@
 Pending enhancements:
 
+- Remove large .JPG files that are unused from project
+    - Should help control deploy sizes.
+
 - Refine technologies search interface to do the following:
   Priority: ****
     - Filter tech on tech name keyup
