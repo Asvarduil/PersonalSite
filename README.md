@@ -10,7 +10,7 @@ Due to the limited nature of this site, this code runs fully front-end; there's 
 
 If you have questions or ideas, or are interested in hiring me, please contact me at andrew.russel.gray -at- gmail -dot- com.  My inbox is a busy place, though, and I'm a busy man, so it may take me some time to see your message.
 
-**Things you need to do to make this work...**
+## Things you need to do to make this work...
 
 Be sure that you've got Node.js's current LTS version installed at a minimum, so that `npm` is present.  If you don't know if `npm` is set up, run `npm -v` to get the current npm version.  If you see any strange error messags when you run `npm install`, it's probably your Node.js version.
 
