@@ -17,9 +17,9 @@
         {
             "name": "Angular",
             "type": "Web/Front end",
-            "lastVersionUsed": "13",
+            "lastVersionUsed": "14",
             "classification": "Current",
-            "description": "Angular's rise to fame became apparent about two years before COVID broke out.  The first Texas Legislative Council block 3 application, the House Administration Website, was rewritten from AngularJS to Angular 8, in the space of a year and a half.  All TLC Block 3 apps since then have used Angular for their front-end setup.  Additionally, this site is written in Angular 12!"
+            "description": "Angular's rise to fame became apparent about two years before COVID broke out.  The first Texas Legislative Council block 3 application, the House Administration Website, was rewritten from AngularJS to Angular 8, in the space of a year and a half.  All TLC Block 3 apps since then have used Angular for their front-end setup.  Additionally, this site is written in Angular 14!"
         },
         {
             "name": "C#",
