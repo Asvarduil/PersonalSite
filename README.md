@@ -12,21 +12,25 @@ If you have questions or ideas, or are interested in hiring me, please contact m
 
 **Things you need to do to make this work...**
 
+Be sure that you've got Node.js's current LTS version installed at a minimum, so that `npm` is present.  If you don't know if `npm` is set up, run `npm -v` to get the current npm version.  If you see any strange error messags when you run `npm install`, it's probably your Node.js version.
+
 *Note: On Linux, you may need to `sudo` the following commands to get them to work properly, or on Windows run them on an elevated command prompt.*
 
-1. Run the following command to get the current Angular CLI installed globally... 
+1. Run `npm install` to pull down all packages.
+
+2. Run the following command to get the current Angular CLI installed globally... 
 `npm install -g @angular/cli@latest`
 
-2. Run the following command to install Firebase globally...
+3. Run the following command to install Firebase globally...
 `npm install -g firebase-tools`
 
 *Note: Run `firebase --version` to confirm that Firebase is installed!*
 
-3. Run `ng build` to generate a dist folder
+4. Run `ng build` to generate a dist folder
 
-4. CD into the dist folder, and run `firebase init`.  This will create a `.firebaserc` and `firebase.json` file.
+5. CD into the dist folder, and run `firebase init`.  This will create a `.firebaserc` and `firebase.json` file.
 
-5. From there link the project to a Firebase project you control, and set the folder under `dist` with your Angular project's name as the public folder.
+6. From there link the project to a Firebase project you control, and set the folder under `dist` with your Angular project's name as the public folder.
 
 *Note: Your firebase.json file should look a bit like what's below.  The rewrite section allows your Angular project's subpaths to work without your end-users hitting an error page.  For my app, that would be andrewrgray.dev/cv or andrewrgray.dev/technologies.  You may need to delete a line in the `ignore` section as well.*
 
@@ -46,4 +50,4 @@ If you have questions or ideas, or are interested in hiring me, please contact m
       }
     }
 
-6. You should then be able to deploy the site to Firebase with `firebase deploy`.  You should see about 20-30 files deployed.
+7. You should then be able to deploy the site to Firebase with `firebase deploy`.  You should see about 20-30 files deployed.
