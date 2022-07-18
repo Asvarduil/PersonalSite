@@ -1,0 +1,14 @@
+<div class="collapsible-panel"
+     (click)="onChangeExpanded()">
+    <div class="collapsed-view"
+         *ngIf="!isExpanded">
+        <span class="panel-headline">{{ headline }}</span>
+        <span class="panel-subhead">{{ subhead }}</span>
+    </div>
+    <div class="expanded-view"
+         *ngIf="isExpanded">
+        <span class="panel-headline">{{ headline }}</span>
+        <span class="panel-subhead">{{ subhead }}</span>
+        <p class="details" [innerHtml]="details"></p>
+    </div>
+</div>

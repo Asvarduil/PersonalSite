@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { TimeoutError } from 'rxjs';
+
+import { CollapsiblePanelData } from '@app/shared/collapsible-panel/collapsible-panel.component';
 
 @Component({
   selector: 'app-technology',
@@ -36,8 +37,12 @@ export class TechnologyComponent implements OnInit {
     this.results = searchResults;
   }
   
-  toggleEntry(entry: Technology) {
-    entry.isExpanded = !entry.isExpanded;
+  getPanelData(current: Technology): CollapsiblePanelData {
+    return {
+      headline: `${current.name} - ${current.type} (${current.classification})`,
+      subhead: `Last version used - ${current.lastVersionUsed}`,
+      detailHtml: current.description
+    };
   }
 }
 
