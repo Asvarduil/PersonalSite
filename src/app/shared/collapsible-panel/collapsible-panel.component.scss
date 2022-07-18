@@ -1,0 +1,31 @@
+@import '../../../style-constants';
+
+.collapsible-panel {
+    background-color: rgba(15%, 15%, 25%, 95%);
+    color: white;
+    padding: $spacing-half;
+    border-radius: $spacing-half;
+    margin-bottom: $spacing-half;
+
+    overflow-y: hidden;
+    text-shadow: $shadow-light 0 0 $shadow-range-short;
+
+    .panel-headline {
+        display: block;
+        font-weight: lighter;
+        font-size: $font-big;
+        padding-bottom: $spacing-half;
+    }
+
+    .panel-subhead {
+        font-weight: normal;
+        font-style: italic;
+        font-size: $font-standard;
+    }
+
+    .details {
+        margin-top: $spacing-half;
+        border-top: 1px solid #666;
+        padding-top: $spacing-half;
+    }
+}

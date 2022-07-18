@@ -7,14 +7,8 @@
   </div>
   
   <div *ngIf="jobs && jobs.length > 0">
-    <div class="job-entry {{ current.isExpanded ? 'entry-visible' : '' }}" 
-         *ngFor="let current of jobs"
-         (click)="toggleEntry(current)">
-        <h2>{{current.placeOfWork}}</h2>
-        <p><strong>{{current.position}}</strong></p>
-        <p>Started: {{current.startDate}}</p>
-        <p><strong>Duties:</strong> {{current.duties}}</p>
-        <p><strong>Technologies Used:</strong> {{current.technologyUsed}}</p>
-    </div>
+    <app-collapsible-panel [panelData]="getJobPanelData(current)"
+      *ngFor="let current of jobs">
+    </app-collapsible-panel>
   </div>
 </div>
