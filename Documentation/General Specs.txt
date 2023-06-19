@@ -1,5 +1,5 @@
-andrewrgray.info General Specs
-------------------------------
+andrewrgray.dev General Specs
+-----------------------------
 
 The objective of this site is to act as a front-line reference to my C.V.
 and to act as a practical demonstration of my coding capabilities.
@@ -38,4 +38,16 @@ Technologies listing:
     - Subtype included
   - All entries are collapsible
   - Data sourced from a JSON file
-  
+
+ Projects listing
+ - This has a listing of the projects that I can prove I've worked on.
+   *: Project name, project type are filterable using a 'search' component.
+
+   - Project name
+   - Project download link (final version)
+   - Project source link (if null, do not show)
+   - Project type (varies as needed)
+   - Release date
+   - Description 
+   - All entries are collapsible
+   - Data sourced from a JSON file
