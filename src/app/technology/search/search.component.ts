@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 
 import { Technology, TechnologyTypes, TechnologyClassifications } from '../technology.component';
 
@@ -16,12 +16,12 @@ export class SearchComponent implements OnInit {
   types: string[] = TechnologyTypes;
   classifications: string[] = TechnologyClassifications;
 
-  searchForm: FormGroup;
-  nameField: FormControl = new FormControl(null);
-  typeDropdown: FormControl = new FormControl(null);
-  classificationDropdown: FormControl = new FormControl(null);
+  searchForm: UntypedFormGroup;
+  nameField: UntypedFormControl = new UntypedFormControl(null);
+  typeDropdown: UntypedFormControl = new UntypedFormControl(null);
+  classificationDropdown: UntypedFormControl = new UntypedFormControl(null);
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: UntypedFormBuilder) {
     this.searchForm = this.formBuilder.group({
       nameField: this.nameField,
       typeDropdown: this.typeDropdown,
