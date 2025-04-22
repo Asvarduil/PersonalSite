@@ -4,10 +4,11 @@ import { HttpClient } from '@angular/common/http';
 import { CollapsiblePanelData } from '@app/shared/collapsible-panel/collapsible-panel.component';
 
 @Component({
-  selector: 'app-technology',
-  templateUrl: './technology.component.html',
-  styleUrls: ['./technology.component.scss'],
-  encapsulation: ViewEncapsulation.None
+    selector: 'app-technology',
+    templateUrl: './technology.component.html',
+    styleUrls: ['./technology.component.scss'],
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class TechnologyComponent implements OnInit {
   isLoading: boolean = true;

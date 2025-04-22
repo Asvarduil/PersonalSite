@@ -1,13 +1,14 @@
 import { Component, ViewEncapsulation, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 
 import { Technology, TechnologyTypes, TechnologyClassifications } from '../technology.component';
 
 @Component({
-  selector: 'app-search',
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.scss'],
-  encapsulation: ViewEncapsulation.None
+    selector: 'app-search',
+    templateUrl: './search.component.html',
+    styleUrls: ['./search.component.scss'],
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class SearchComponent implements OnInit {
   @Input() technologies: Technology[] = [];
@@ -16,12 +17,12 @@ export class SearchComponent implements OnInit {
   types: string[] = TechnologyTypes;
   classifications: string[] = TechnologyClassifications;
 
-  searchForm: FormGroup;
-  nameField: FormControl = new FormControl(null);
-  typeDropdown: FormControl = new FormControl(null);
-  classificationDropdown: FormControl = new FormControl(null);
+  searchForm: UntypedFormGroup;
+  nameField: UntypedFormControl = new UntypedFormControl(null);
+  typeDropdown: UntypedFormControl = new UntypedFormControl(null);
+  classificationDropdown: UntypedFormControl = new UntypedFormControl(null);
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: UntypedFormBuilder) {
     this.searchForm = this.formBuilder.group({
       nameField: this.nameField,
       typeDropdown: this.typeDropdown,

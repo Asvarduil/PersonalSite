@@ -8,10 +8,11 @@ export interface CollapsiblePanelData {
 }
 
 @Component({
-  selector: 'app-collapsible-panel',
-  templateUrl: './collapsible-panel.component.html',
-  styleUrls: ['./collapsible-panel.component.scss'],
-  encapsulation: ViewEncapsulation.None
+    selector: 'app-collapsible-panel',
+    templateUrl: './collapsible-panel.component.html',
+    styleUrls: ['./collapsible-panel.component.scss'],
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class CollapsiblePanelComponent implements OnInit {
   @Input() public panelData: CollapsiblePanelData;
