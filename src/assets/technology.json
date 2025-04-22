@@ -17,14 +17,14 @@
         {
             "name": "Angular",
             "type": "Web/Front end",
-            "lastVersionUsed": "14",
+            "lastVersionUsed": "19",
             "classification": "Current",
             "description": "Angular's rise to fame became apparent about two years before COVID broke out.  The first Texas Legislative Council block 3 application, the House Administration Website, was rewritten from AngularJS to Angular 8, in the space of a year and a half.  All TLC Block 3 apps since then have used Angular for their front-end setup.  Additionally, this site is written in Angular 14!"
         },
         {
             "name": "C#",
             "type": "Language/Back end",
-            "lastVersionUsed": "8",
+            "lastVersionUsed": "9",
             "classification": "Current",
             "description": "C# is the primary language Andrew has used in his career.  His initial work with McLane Advanced Technologies happened in 2011, when C#6 was the current language version.  After moving to the Texas Legislative Council, C#7, and later C#8 became available, with improved functional language support, better generic types including the Tuple, and string interpolation, which helps with inline text formatting."
         },
@@ -38,14 +38,14 @@
         {
             "name": ".NET 5+",
             "type": "General-purpose/Back end",
-            "lastVersionUsed": "5",
+            "lastVersionUsed": "8",
             "classification": "Current",
             "description": "The successor to the .NET Framework.  .NET 5+ provides simplified distribution options that take the best ideas of .NET Core, and combine them with the ubiquity of the .NET Framework."
         },
         {
             "name": "ActiveReports",
             "type": "Reports/Back end",
-            "lastVersionUsed": "16",
+            "lastVersionUsed": "19",
             "classification": "Current",
             "description": "ActiveReports is the reporting software of choice for the Texas Legislative Council, with all applications that Andrew worked on using this software to generate PDF reports, that are then served to the user through MVC actions in older apps, or Web API endpoints in more modern ones."
         },
@@ -80,14 +80,14 @@
         {
             "name": "TypeScript",
             "type": "Language/Front end",
-            "lastVersionUsed": "4.x",
+            "lastVersionUsed": "5.x.x",
             "classification": "Current",
             "description": "Angular 2+ applications are compiled from TypeScript.  TypeScript provides improved organization, and better scoping, to JavaScript, while being backwards compatible with JavaScript.  In addition to Texas Legislative Council Angular applications, this personal website is written in TypeScript and Angular 12!"
         },
         {
             "name": "ECMAScript (JavaScript)",
             "type": "Language/Full stack",
-            "lastVersionUsed": "6",
+            "lastVersionUsed": "2022",
             "classification": "Legacy",
             "description": "Andrew's initial work at McLane Advanced Technologies, and the first block of Texas Legislative Council apps, were written in JavaScript.  JavaScript is a powerful and ubiquitous OOP/Functional language, but it has a number of flaws due to its rushed initial development that make writing and maintaining apps in it problematic.  TypeScript solves many, but not all, of these issues, while frameworks like the Angular family provide structure that avoids programmers needing to run headlong into some of the more arcane aspects of the language."
         }
