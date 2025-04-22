@@ -25,12 +25,14 @@ Be sure that you've got Node.js's current LTS version installed at a minimum, so
 `npm install -g firebase-tools`
 
 *Note: Run `firebase --version` to confirm that Firebase is installed!*
+*Additional note: If you get odd behavior when deploying, run `npm install -g firebase-tools@latest` to install the latest Firebase CLI.*
 
 4. Run `ng build` to generate a dist folder
+Additionally: To build a minified release version, run `ng build --configuration=production`
 
-5. CD into the dist folder, and run `firebase init`.  This will create a `.firebaserc` and `firebase.json` file.
+6. CD into the dist folder, and run `firebase init`.  This will create a `.firebaserc` and `firebase.json` file.
 
-6. From there link the project to a Firebase project you control, and set the folder under `dist` with your Angular project's name as the public folder.
+7. From there link the project to a Firebase project you control, and set the folder under `dist` with your Angular project's name as the public folder where all the files you want to be deployed are.
 
 *Note: Your firebase.json file should look a bit like what's below.  The rewrite section allows your Angular project's subpaths to work without your end-users hitting an error page.  For my app, that would be andrewrgray.dev/cv or andrewrgray.dev/technologies.  You may need to delete a line in the `ignore` section as well.*
 
