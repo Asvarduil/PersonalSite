@@ -4,10 +4,11 @@ import { HttpClient } from '@angular/common/http';
 import { CollapsiblePanelData } from '@app/shared/collapsible-panel/collapsible-panel.component';
 
 @Component({
-  selector: 'app-curriculum-vitae',
-  templateUrl: './curriculum-vitae.component.html',
-  styleUrls: ['./curriculum-vitae.component.scss'],
-  encapsulation: ViewEncapsulation.None
+    selector: 'app-curriculum-vitae',
+    templateUrl: './curriculum-vitae.component.html',
+    styleUrls: ['./curriculum-vitae.component.scss'],
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class CurriculumVitaeComponent implements OnInit {
   public isLoading: boolean = true;
